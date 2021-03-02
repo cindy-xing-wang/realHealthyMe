@@ -34,8 +34,9 @@
                 <th class="nosort">Email</th>
                 <th class="nosort">phone_number</th>
                 <th class="nosort">Specialist</th>
-                <th></th>
-                <th></th>
+                <th  class="nosort"></th>
+                <th  class="nosort"></th>
+                <th  class="nosort"></th>
 
             </tr>
         </thead>
