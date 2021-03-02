@@ -38,9 +38,11 @@ class HealthProfessionalController extends Controller
     {
         $this->validateStore($request);
         $data = $request->all();
-        $name = (new User)->userAvatar($request);
+        if ($request->hasFile('image')) {
+            $name = (new User)->userAvatar($request);
+            $data['image'] = $name;
+        }
 
-        $data['image'] = $name;
         $data['password'] = bcrypt($request->password);
         User::create($data);
 
