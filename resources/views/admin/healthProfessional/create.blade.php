@@ -136,15 +136,10 @@
                 <div class="col-md-6">
                     <div class="form-group">
                     <label>Choose Profile Photo</label>
-                    <input type="file" name="image" class="form-control file-upload-info @error('image') is-invalid @enderror"  placeholder="Upload Image">
+                    <input type="file" name="image" class="form-control file-upload-info"  placeholder="Upload Image">
                     <span class="input-group-append">
-                    <button class="file-upload-browse btn btn-primary" type="button">Choose photo</button>
+                    {{-- <button class="file-upload-browse btn btn-primary" type="button">Choose photo</button> --}}
                     </span>
-                    @error('image')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror                    
                     </div>
                 </div>
                 <div class="col-md-6">

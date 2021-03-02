@@ -134,7 +134,7 @@ class HealthProfessionalController extends Controller
             'address'=>'required',
             'specialist'=>'required',
             'phone'=>'required|numeric',
-            'image'=>'required|mimes:jpeg,jpg,png',
+            'image'=>'mimes:jpeg,jpg,png',
             'role_id'=>'required',
             // 'description'=>'required'
 
