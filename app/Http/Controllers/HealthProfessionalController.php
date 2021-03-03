@@ -118,7 +118,7 @@ class HealthProfessionalController extends Controller
        }
        $user = User::find($id);
        $userDelete = $user->delete();
-       if($userDelete){
+       if($userDelete && $user->image != null){
         unlink(public_path('images/'.$user->image));
        }
         return redirect()->route('healthProfessional.index')->with('message','Staff deleted successfully');
