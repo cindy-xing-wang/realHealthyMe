@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link rel="icon" href="https://static.wixstatic.com/media/843435_19ebea197738465ab4f07d4c64518959~mv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/843435_19ebea197738465ab4f07d4c64518959~mv2.png" type="image/x-icon" />
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Lifestyle Medicine | Real Healthy Me | New Zealand') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -26,7 +26,7 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="https://static.wixstatic.com/media/843435_19ebea197738465ab4f07d4c64518959%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/843435_19ebea197738465ab4f07d4c64518959%7Emv2.png" class="header-brand-img" alt="lavalite"> 
-                    {{ config('app.name', 'Laravel') }}
+                    {{ config('app.name', 'Lifestyle Medicine | Real Healthy Me | New Zealand') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
