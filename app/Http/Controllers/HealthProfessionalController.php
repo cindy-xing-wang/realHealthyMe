@@ -114,7 +114,7 @@ class HealthProfessionalController extends Controller
     public function destroy($id)
     {
         if(auth()->user()->id == $id){
-            abort(401);
+            return redirect()->route('healthProfessional.index')->with('message','Not able to delete yourself');
        }
        $user = User::find($id);
        $userDelete = $user->delete();
